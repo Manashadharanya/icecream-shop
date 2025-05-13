@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ice Cream Shop</h1>
+    </header>
+
+    <div class="products">
+        <div class="product">
+            <img src="C:\Users\AI 27\Downloads\vannila.jfif" alt="Vanilla Ice Cream">
+            <h3>Vanilla</h3>
+            <p>$2.50</p>
+            <button onclick="addToCart('Vanilla', 2.5)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\AI 27\Downloads\strawberry.jpg" alt="Chocolate Ice Cream">
+            <h3>Chocolate</h3>
+            <p>$3.00</p>
+            <button onclick="addToCart('Chocolate', 3.0)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\AI 27\Downloads\chocolate.jfif" alt="Strawberry Ice Cream">
+            <h3>Strawberry</h3>
+            <p>$2.75</p>
+            <button onclick="addToCart('Strawberry', 2.75)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <div id="cart-total">
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
